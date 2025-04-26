@@ -1,1 +1,1 @@
-This repository contains a curated list of coding problems, mainly from LeetCode. It is imporant to work on these, so that you get well versed with data-structures, algorithms and common problem solving patterns.
+*Coding problems, mainly from LeetCode. To get well versed with data-structures, algorithms and common problem-solving patterns.*
