@@ -8,12 +8,13 @@ search_text = '''
 abcdefghijklmnopqrstuvwxyz
 ABCDEFGHIJKLMNOPQRSTUVWXYZ
 0123456789
++91-9156690838
 '''
 
 sentence = "Start a sentence and then bring it to an end"
 
 # Use re.compile when you are using the same pattern multiple times
-pattern = re.compile(r'end$')
+pattern = re.compile(r'\+91-\d{10}')
 # r'some string' is called a raw string in Python.
 # It allows Python to evaluate strings literally,
 # without accounting for special characters like backslashes \.
@@ -55,8 +56,19 @@ Common Regex Metacharacters :
 $ = End of a String
 [...] = Any one character from the set. For example [aeiou] matches any vowel
 [^...] = Any one character not in the set. For example [^aeiou] matches consonants
+* = 
++ = 
+? = 
+{n} = Exactly n repetitions. For example \d{3} matches 123, 345, 981, etc.
+{n,} = 
+{n,m} = 
+()
 """
 
+"""
+Regex Pattern for Phone Number = r'\+91-\d{10}'
+Regex Patter for Email Id = 
+"""
 
 
 
