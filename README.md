@@ -1,1 +1,1 @@
-*Coding problems, mainly from LeetCode. To get well versed with data-structures, algorithms and common problem-solving patterns.*
+*Data structures, algorithms and common problem solving patterns.*
