@@ -1,4 +1,4 @@
-# continue : Skips the current iteration and moves to the next.
+# continue : Skips the current iteration and moves on to the next.
 
 for i in range(10):
     if i == 5:

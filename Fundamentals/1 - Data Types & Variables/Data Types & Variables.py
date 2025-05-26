@@ -3,7 +3,7 @@
 # Can contain letters, numbers and underscores.
 
 
-# Dynamic Typing : Variables in Python are dynamically typed (no need to specify type).
+# Dynamic Typing : Variables in Python are dynamically typed (no need to specify type during declaration)
 x = 10  # Integer
 name = "Avi"  # String
 pi = 3.14  # Float

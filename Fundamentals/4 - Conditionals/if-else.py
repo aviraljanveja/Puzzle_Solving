@@ -1,4 +1,4 @@
-# Basic if-else : The else block runs when the if condition is False.
+# Basic if-else : The else block runs when the if-condition is False.
 
 x = 3
 if x % 2 == 0:

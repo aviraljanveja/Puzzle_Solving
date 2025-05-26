@@ -3,7 +3,8 @@
 
 x = 15
 if x > 0:
-    if x % 3 == 0:
-        print("Positive and divisible by 3")
-    else:
-        print("Positive but not divisible by 3")
+    print("Positive")
+    if x % 5 == 0:
+        print("...and divisible by 5")
+else:
+    print("Non-Positive")

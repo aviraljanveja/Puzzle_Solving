@@ -1,5 +1,4 @@
-# Conditions with logical operators
-# Combine conditions using and, or, not
+# Logical operators like and, or and not can be used to combine multiple conditions
 
 x = 10
 y = 20

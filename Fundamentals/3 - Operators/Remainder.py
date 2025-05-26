@@ -1,6 +1,6 @@
-# Modulus Operator (Remainder)
+# Modulus Operator (Finds the remainder after division)
 
 a = 5
 b = 2
 
-print(a % b)  # Output, Remainder = 1
+print(a % b)  # Output = 1

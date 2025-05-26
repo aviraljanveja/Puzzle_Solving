@@ -1,4 +1,4 @@
-# Using if with in and not in for membership checks
+# Using if with "in" and "not in" for membership checks
 
 fruit = "pineapple"
 if "apple" in fruit:
