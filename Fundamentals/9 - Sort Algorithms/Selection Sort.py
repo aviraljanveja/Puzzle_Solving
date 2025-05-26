@@ -1,4 +1,5 @@
 # Selection Sort Algorithm
+# Time Complexity = O(n^2) | Quadratic
 
 def selection_sort(arr):
     # Given n is the length of array, we only need to make n-1 passes:

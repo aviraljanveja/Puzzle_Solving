@@ -1,4 +1,5 @@
 # Insertion Sort Algorithm
+# Time Complexity = O(n^2) | Quadratic
 
 def insertion_sort(arr):
     # Start from the second element (index 1),

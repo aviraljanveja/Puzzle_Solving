@@ -1,4 +1,5 @@
 # Merge Sort Algorithm
+# Time Complexity = O(nlogn) | Log-Linear 
 
 def merge_sort(arr):
     # Base case: If the list has 0 or 1 elements, it is already sorted

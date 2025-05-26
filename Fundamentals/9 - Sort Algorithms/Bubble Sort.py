@@ -1,4 +1,5 @@
 # Bubble Sort Algorithm
+# Time Complexity = O(n^2) | Quadratic
 
 def bubble_sort(arr):
     # Given an array of length n, we only need to make n-1 passes:
