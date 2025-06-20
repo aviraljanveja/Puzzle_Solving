@@ -15,16 +15,16 @@ def merge_sort(arr):
         # Step 3: Recursively split and sort the right half
         right_half = merge_sort(arr[mid:])
 
-        # Step 4: Merge the sorted halves
+        # Step 4: Sorts and combines the two halves
         return merge(left_half, right_half)
 
 
-# Merge Function to sort and combine the two halves
+# Function to sort and combine the two halves
 def merge(left, right):
     # Create an empty list to store the merged result
     merged_list = []
 
-    # Initialize two index pointers to track positions in the left and right halves
+    # Initialize two pointers for elements in the left and right halves
     li = 0
     ri = 0
 
@@ -37,12 +37,12 @@ def merge(left, right):
             merged_list.append(right[ri])
             ri += 1
 
-    # Step 2: If any elements are left in the left half, append them
+    # Step 2: If any elements remain in the left half, append them
     while li < len(left):
         merged_list.append(left[li])
         li += 1
 
-    # Step 3: If any elements are left in the right half, append them
+    # Step 3: If any elements remain in the right half, append them
     while ri < len(right):
         merged_list.append(right[ri])
         ri += 1
