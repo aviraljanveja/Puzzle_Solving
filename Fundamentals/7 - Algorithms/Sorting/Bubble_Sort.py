@@ -9,9 +9,9 @@ def bubble_sort(arr):
 
         # During the i-th pass, we only need to compare up to (len(arr) - 1 - i)
         # because each pass places the largest element of the unsorted part at the correct position in the end.
-        for j in range(len(arr)-1-i):
+        for j in range(len(arr)-i-1):
 
-            # If the current element is greater than the next element,
+            # If the current element is greater than the next adjacent element,
             # swap them so that the larger one moves (bubbles) towards the end.
             if arr[j] > arr[j+1]:
                 arr[j], arr[j+1] = arr[j+1], arr[j]

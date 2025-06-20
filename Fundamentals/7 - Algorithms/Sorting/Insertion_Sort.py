@@ -3,21 +3,21 @@
 
 def insertion_sort(arr):
     # Start from the second element (index 1),
-    # because the first element (index 0) is naturally already sorted.
+    # because the first element (index 0) being added to a list, will naturally be already sorted.
     for i in range(1, len(arr)):
 
-        # The, we iterate in reverse from i down to 1
-        # comparing arr[j] with its previous element arr[j - 1]
+        # Then, we iterate in reverse from i
+        # comparing arr[j] with its previous element arr[j-1]
         for j in range(i, 0, -1):
 
-            # If the current element arr[j] is smaller than the previous element arr[j - 1], they are swapped.
+            # If the current element arr[j] is smaller than its previous element arr[j-1], they are swapped.
             if arr[j] < arr[j-1]:
                 arr[j], arr[j-1] = arr[j-1], arr[j]
 
-            # As soon as we find that the current element is not smaller than its predecessor,
-            # we know it's in the right spot because everything to the left is already sorted.
+            # As soon as the current element is not smaller than its predecessor,
+            # we know it is in the right spot because everything to the left is already sorted.
             else:
-                break  # so we break out of the loop to stop unnecessary comparisons.
+                break  # Hence, we break out of the loop to avoid unnecessary comparisons.
 
 
 # Test case
