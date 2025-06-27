@@ -1,4 +1,5 @@
-# LeetCode 1 - Two Sum (https://leetcode.com/problems/two-sum/description/)
+# LeetCode 1 : Two Sum 
+# Problem Link : https://leetcode.com/problems/two-sum/description/
 
 def twosum(nums, target):
     check = {}  # Step 1: Create an empty dictionary to store array numbers as keys and their indices as values
