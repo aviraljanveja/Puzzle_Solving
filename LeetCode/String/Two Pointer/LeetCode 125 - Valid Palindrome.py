@@ -1,4 +1,4 @@
-# LeetCode 125 - Valid Palindrome
+# LeetCode 125 : Valid Palindrome
 # Problem Link : https://leetcode.com/problems/valid-palindrome/
 
 def isPalindrome(s):
