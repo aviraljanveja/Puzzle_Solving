@@ -11,9 +11,9 @@ def maxProfit(prices):
             profit = prices[sell] - prices[buy]  # If yes, calculate profit
             if profit > max_profit:  # Update max_profit, if the current profit is greater
                 max_profit = profit
-        else:  # Instead, if current buy-price is more than sell-price, update buy pointer,
-            buy = sell # so that we can buy at the lowest available price.
-        sell += 1  # Increment sell pointer to check for the next profit margin or buying opportunity and repeat.
+        else:  # Instead, if sell-price is lower than the buy-price, update buy pointer,
+            buy = sell # so that we can buy at the lowest available price, currently.
+        sell += 1  # Increment sell pointer to check for the next profit margin / buying opportunity and repeat.
 
     return max_profit  # Return the maximum profit found
 
