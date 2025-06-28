@@ -1,16 +1,16 @@
-# LeetCode 242 - Valid Anagram
+# LeetCode 242 : Valid Anagram
 # Problem Link : https://leetcode.com/problems/valid-anagram/description/
 
 def isAnagram(s, t):
     # Helper function to convert a string into a dictionary with character counts
     def dictConvert(arr):
-        d = {}
-        for i in arr:
-            if i in d:  # If the character is already in the dictionary, increment its count
+        d = {}  # Initialize an empty dictionary
+        for i in arr:  # Iterate over characters
+            if i in d:  # If the character is already in the dictionary, increment its count value
                 d[i] += 1
             else:  # else, add it with a count of 1
                 d[i] = 1
-        return d
+        return d  # Return the formed dictionary
 
     # Compare the dictionaries generated from both strings
     # If they are equal, the strings are anagrams
