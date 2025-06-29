@@ -1,4 +1,5 @@
-# LeetCode 169 - Majority Element (https://leetcode.com/problems/majority-element/description/)
+# LeetCode 169 : Majority Element
+# Problem Link : https://leetcode.com/problems/majority-element/description/
 
 def majorityElement(nums):
     count = {}  # Initialize an empty dictionary to store the count of each element
