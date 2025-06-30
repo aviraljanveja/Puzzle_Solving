@@ -1,30 +1,33 @@
-# LeetCode 409 - Longest Palindrome
+# LeetCode 409 : Longest Palindrome
 # Problem Link : https://leetcode.com/problems/longest-palindrome/description/
 
 def longestPalindrome(s):
-    dct = {}  # Dictionary to count the frequency of each character in the string
-    n = 0  # Variable to keep track of the maximum length of the palindrome
-    odd_found = False  # Flag to check if there's at least one character with an odd count
+    seen = set()  # Initialize an empty set to check if the character appears odd or even number of times
+    res = 0  # result variable to keep track of the maximum length of the palindrome
 
     for ch in s:  # Iterate through each character in the input string
-        if ch in dct:  # Increment the character count in the dictionary
-            dct[ch] += 1
+        if ch in seen:  # If the character is repeating or even count like 2, 4, 6 ...
+            seen.remove(ch)  # then we can remove it,
+            res += 2  # and add 2 to our palindrome length.
         else:
-            dct[ch] = 1
+            seen.add(ch)  # else, if the character is witnessed for the first time or odd count, we add it.
 
-    for val in dct.values():  # Iterate through the frequency of each character
-        if val % 2 == 0:  # If the frequency is even, it can fully contribute to the palindrome
-            n += val
-        else:  # If the frequency is odd, contribute the largest even part to the palindrome
-            n += val - 1
-            odd_found = True  # Mark that an odd frequency character was found
+    # After the loop, If the set is not empty, we can add 1 to the result and return it.
+    # This is done to account for that one odd character that can be placed in the middle of the palindrome.
+    # For example : abcba
+    if seen:
+        res += 1
 
-    # If any odd frequency character was found, we can place one such character
-    # in the middle of the palindrome, increasing the length by 1
-    if odd_found:
-        n += 1
+    return res
 
-    return n  # Return the maximum length of the palindrome
+
+# The idea of a palindrome is to have balanced pairs of elements on both sides in a string,
+# with one odd element that can be placed in the center, for example : abcba.
+# In the above approach, the "unique elements only" property of the set is used to check
+# if the count of elements is even or odd.
+
+# Alternatively, a dictionary can be used above, but the set approach is more efficient as we
+# do not really care for the exact count of the elements only, whether they are in exact pairs(even) or not (odd).
 
 
 # Test case
