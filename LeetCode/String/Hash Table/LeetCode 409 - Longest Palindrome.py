@@ -27,7 +27,7 @@ def longestPalindrome(s):
 # if the count of elements is even or odd.
 
 # Alternatively, a dictionary can be used above, but the set approach is more efficient as we
-# do not really care for the exact count of the elements only, whether they are in exact pairs(even) or not (odd).
+# do not really care for the exact count of the elements, only whether they are in exact pairs(even) or not(odd).
 
 
 # Test case
