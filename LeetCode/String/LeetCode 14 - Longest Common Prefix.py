@@ -11,5 +11,4 @@ def longestCommonPrefix(strs):
 
 # Test Case
 str1 = ["flower","flow","flowy"]
-result = "".join(longestCommonPrefix(str1))
-print(result)  # Output = "flow"
+print(longestCommonPrefix(str1))  # Output = "flow"
