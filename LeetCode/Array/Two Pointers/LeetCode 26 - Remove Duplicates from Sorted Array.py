@@ -1,5 +1,5 @@
 # LeetCode 26 : Remove Duplicates from Sorted Array
-# (https://leetcode.com/problems/remove-duplicates-from-sorted-array/description/)
+# Problem Link : https://leetcode.com/problems/remove-duplicates-from-sorted-array/description/
 
 def removeDuplicates(nums):
     i = 1  # pointer 1, to Iterate through the sorted array.
@@ -19,4 +19,3 @@ def removeDuplicates(nums):
 arr1 = [0, 0, 0, 1, 1, 1, 2, 2, 2]
 solution1 = removeDuplicates(arr1)
 print(solution1)  # Output: 3 (number of unique elements = 0, 1, 2)
-print(arr1)  # Output array, duplicates removed in-place = [0, 1, 2, 3, 4, 2, 2, 3, 3, 4]
