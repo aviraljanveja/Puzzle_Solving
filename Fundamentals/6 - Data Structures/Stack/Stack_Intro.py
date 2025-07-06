@@ -2,10 +2,9 @@
 # This way of organizing elements is called LIFO : Last In First Out.
 
 # Basic operations we can do on a stack are:
-# - Push: Adds a new element on the stack.
+# - Push: Adds a new element on top of the stack.
 # - Pop: Removes and returns the top element from the stack.
 # - Peek: Returns the top (last) element on the stack.
-# - isEmpty: Checks if the stack is empty.
 # - Size: Finds the number of elements in the stack.
 
 # Stacks can be used to implement undo mechanisms, to revert to previous states,
@@ -27,9 +26,6 @@ print(stack.pop())  # Output = C
 
 # Stack after Pop
 print(stack)  # Output = ['A', 'B']
-
-# IsEmpty
-print(bool(stack))  # Output = True
 
 # Size
 print(len(stack))  # Output = 2
