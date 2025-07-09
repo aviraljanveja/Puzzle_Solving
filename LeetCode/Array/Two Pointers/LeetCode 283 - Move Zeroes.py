@@ -1,4 +1,4 @@
-# LeetCode 283 - Move Zeroes
+# LeetCode 283 : Move Zeroes
 # Problem Link : https://leetcode.com/problems/move-zeroes/description/
 
 def moveZeroes(nums):
