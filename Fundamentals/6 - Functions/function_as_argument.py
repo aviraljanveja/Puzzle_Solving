@@ -1,25 +1,11 @@
-# Functions as arguments to other functions.
+# Sorting a dictionary by values.
+# Defining a function to return the "value" from the (key, value) tuple,
+# and passing it as an argument to the key in sorted() function.
 
-# In Python, functions are treated as first-class objects,
-# meaning they can be assigned to variables, stored in data structures,
-# and passed as arguments to other functions, just like any other data type (integers, strings, etc.)
+dict1 = {'a': 3, 'b': 1, 'c': 2}
 
-# Demonstrating how functions can be passed as arguments to other functions.
-# We have three functions: greet, name and display_message.
-def greet():
-    return "Hello "
+def get_values(item):
+    return item[1]
 
-
-def name():
-    return "Alice!"
-
-
-def display_message(greeting_function, name_function):
-    # The display_message function takes two function parameters, message_function and name_function.
-    # Note, we do not apply parentheses when using functions as parameters/arguments.
-    message = greeting_function() + name_function()
-    print(message)
-
-
-# Pass 'greet' and 'name' functions as arguments to the 'display_message' function
-display_message(greet, name)  # Output = Hello Alice!
+sorted_dict1 = dict(sorted(dict1.items(), key=get_values))
+print(sorted_dict1)  # Output = {'b': 1, 'c': 2, 'a': 3}
