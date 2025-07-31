@@ -21,7 +21,7 @@ leo = Animal(2)
 print(leo.get_age())  # Output : 2
 
 leo.set_age(4)
-print(leo.get_age())  # Output : 3
+print(leo.get_age())  # Output : 4
 
 leo.set_age("old")
 print(leo.get_age())  # Raises Type Error as required
