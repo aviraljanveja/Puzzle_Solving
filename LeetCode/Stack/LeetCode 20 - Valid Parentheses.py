@@ -7,15 +7,14 @@ def isValid(s):
 
     for char in s:  # Iterate over the characters in the given string.
         if char in pairs:  # if the character is a closing bracket (one of the keys of the "pairs" dictionary defined above)
-            if stack and stack[-1] == pairs[char]:  # Then further check if the stack is non-empty and if the previous character added to the stack was the corresponding opening bracket
-                stack.pop()  # Then, it is a valid closing bracket, hence we pop the last opening bracket off the stack, essentially taking care of the valid pair of brackets.
+            if stack and stack[-1] == pairs[char]:  # Then check if the stack is non-empty and if the last character added to the stack was the corresponding opening bracket
+                stack.pop()  # If yes, then it is a valid closing bracket and we pop it off the stack, essentially taking care of one valid pair of brackets.
             else:
                 return False  # If not, then either the order or type of brackets is incorrect and hence we return False.
         else:
-            stack.append(char)  # On the other hand, if the current character is an opening bracket, then simply add it atop the stack.
+            stack.append(char)  # On the other hand, if the current character is an opening bracket, then simply add it to the stack.
 
-    return len(stack) == 0  # Our approach must leave an empty stack in the end, if all the bracket pairs were valid and in order.
-    # Hence, if the stack is empty in the end, all the brackets were valid and popped off the stack, thus we return True, otherwise False.
+    return len(stack) == 0  # If the stack is empty in the end, all the bracket-pairs were valid and popped off the stack, thus we return True, otherwise False.
 
 
 # Test cases
