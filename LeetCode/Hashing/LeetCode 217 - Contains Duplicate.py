@@ -2,13 +2,13 @@
 # Problem Link : https://leetcode.com/problems/contains-duplicate/description/
 
 def containsDuplicate(nums):
-    check = set()  # Initialize an empty set to keep track of numbers we have seen so far.
+    check = set()  # Initialize an empty set to keep track of the numbers we have seen so far.
 
     for n in nums:  # Iterate through the array.
-        if n in check:  # Check if the current number is already in the array.
-            return True  # If it is, we have found a duplicate, so return True.
+        if n in check:  # Check if the current number is already in the set.
+            return True  # If yes, we have found a duplicate, so return True.
         else:
-            check.add(n)  # else, add the current number to the set.
+            check.add(n)  # else, add the number to the set.
 
     return False  # If the loop exits without finding any duplicates, return False.
 
