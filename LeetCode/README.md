@@ -1,1 +1,1 @@
-*Solved LeetCode problems from the [NeetCode 250](https://neetcode.io/practice?tab=neetcode250) list.*
+*Solved LeetCode problems from the [NeetCode250](https://neetcode.io/practice?tab=neetcode250) list.*
