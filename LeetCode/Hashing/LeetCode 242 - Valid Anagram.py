@@ -2,19 +2,21 @@
 # Problem Link : https://leetcode.com/problems/valid-anagram/description/
 
 def isAnagram(s, t):
-    # Helper function to convert a string into a dictionary with character counts
-    def dictConvert(arr):
+    if len(s) != len(t):  # Check for equal length as the first test
+        return False
+
+    def dictmaker(arr):  # Helper function to convert a string into a dictionary with character counts
         d = {}  # Initialize an empty dictionary
         for i in arr:  # Iterate over characters
             if i in d:  # If the character is already in the dictionary, increment its count value
                 d[i] += 1
-            else:  # else, add it with a count of 1
+            else:  # else, add it to dictionary
                 d[i] = 1
         return d  # Return the formed dictionary
 
+
     # Compare the dictionaries generated from both strings
-    # If they are equal, the strings are anagrams
-    return dictConvert(s) == dictConvert(t)
+    return dictmaker(s) == dictmaker(t)  # If they are equal, the strings are anagrams
 
 
 # Test cases
