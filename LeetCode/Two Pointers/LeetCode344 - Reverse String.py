@@ -11,10 +11,6 @@ def reverseString(s):
 
 
 # Test cases:
-s1 = ["h","e","l","l","o"]
+s1 = ['h', 'e', 'l', 'l', 'o']
 reverseString(s1)
-print(s1)
-
-s2 = ["H","a","n","n","a","h"]
-reverseString(s2)
-print(s2)
+print(s1)  # Output = ['o', 'l', 'l', 'e', 'h']

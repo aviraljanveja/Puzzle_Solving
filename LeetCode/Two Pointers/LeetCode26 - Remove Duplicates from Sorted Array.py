@@ -18,4 +18,4 @@ def removeDuplicates(nums):
 # Test case
 arr1 = [0, 0, 0, 1, 1, 1, 2, 2, 2]
 solution1 = removeDuplicates(arr1)
-print(solution1)  # Output: 3 (number of unique elements = 0, 1, 2)
+print(solution1)  # Output = 3 (unique elements = 0, 1, 2)
