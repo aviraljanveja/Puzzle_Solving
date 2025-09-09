@@ -9,7 +9,8 @@ def removeDuplicates(nums):
         if nums[r] != nums[r-1]:  # Check if the current element is different from the previous one.
             nums[l] = nums[r]  # If yes, then a new element is found. Write it to the left-pointer position.
             l += 1  # Increment l, for storing the next unique element.
-        r += 1  # Increment r
+
+        r += 1  # Increment r for the loop
 
     return l  # After loop, Return l, which holds the number of unique elements in the array.
 
