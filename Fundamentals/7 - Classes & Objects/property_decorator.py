@@ -1,17 +1,17 @@
-# Using the inbuilt property function with the @decorator syntax.
+# Using the inbuilt property function with @decorator syntax.
 # It allows us to define getters & setters, thereby controlling access & modification of private variables,
-# but still access them like regular variables, in a concise and readable manner.
+# while still using them like regular variables.
 
 class Animal:
     def __init__(self, age):
         self.__age = age  # Private variable age
 
     @property  # Property-getter via @decorator syntax
-    def age(self):
+    def age(self):  # While using the property function, the method name should always be same as the attribute name : age in this case
         return self.__age
 
     @age.setter  # Property-setter via @decorator syntax
-    def age(self, new_age):  # The method names should always be same as the attribute name : age in this case
+    def age(self, new_age):
         if isinstance(new_age, int):  # Validation check
             self.__age = new_age
         else:
