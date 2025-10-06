@@ -24,7 +24,7 @@ result = map(int, ["1", "2", "3", "4"])
 print(result)  # Output: <map object at 0x...>
 # To display or access the items from this map object,
 # you need to explicitly convert it to a list, tuple or iterate through it.
-print(list(result))  # Output: [1, 2, 3]
+print(list(result))  # Output = [1, 2, 3, 4]
 
 # map() function alternative with for-loop :
 user_input2 = "1 2 3 4"
