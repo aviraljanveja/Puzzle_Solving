@@ -16,21 +16,18 @@ def merge_sort(arr):
     l = 0  # Initialize two pointers for elements
     r = 0  # in the left and right halves
 
-    # Compare elements from both halves and merge them in sorted order
     while l < len(left) and r < len(right):
-        if left[l] < right[r]:
-            res.append(left[l])
+        if left[l] < right[r]:  # Compare elements from both halves
+            res.append(left[l])  # and merge them in sorted order
             l += 1
         else:
             res.append(right[r])
             r += 1
 
-    # Append the remaining elements
-    res.extend(left[l:])
-    res.extend(right[r:])
+    res.extend(left[l:])  # Append the remaining elements
+    res.extend(right[r:])  # from both halves
 
-    # Return the sorted result
-    return res
+    return res  # Return the sorted result
 
 
 # Example :
