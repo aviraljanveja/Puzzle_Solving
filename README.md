@@ -1,1 +1,1 @@
-*Programming fundamentals, data structures, algorithms and important problem solving patterns.*
+*Programming fundamentals, data structures, algorithms and important puzzle solving patterns.*
