@@ -1,1 +1,1 @@
-*Data structures, algorithms and important puzzle solving patterns.*
+*Important puzzle solving patterns.*
