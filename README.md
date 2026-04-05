@@ -1,1 +1,1 @@
-*Important puzzle solving patterns.*
+*Important problem solving patterns.*
