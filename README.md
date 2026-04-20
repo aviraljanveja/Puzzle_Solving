@@ -1,1 +1,1 @@
-*Important problem solving patterns.*
+*Algorithmic problem solving patterns.*
