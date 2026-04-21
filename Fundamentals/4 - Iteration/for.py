@@ -1,4 +1,4 @@
-# for Loop : A for loop is used to iterate over a sequence ( for example, string) or other iterable objects. 
+# for Loop : A for loop is used to iterate over a sequence. For example, a range of numbers or characters in a string. 
 # It executes a block of code for each item in the sequence.
 
 
