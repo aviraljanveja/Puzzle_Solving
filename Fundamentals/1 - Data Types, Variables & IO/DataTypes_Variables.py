@@ -1,5 +1,5 @@
 # Variables and Data Types.
-# In Python, a variable is a label attached to a value, like a number or some text.
+# In Python, a variable is a label attached to a value (a number or some text).
 # Variables must start with a letter or an underscore.
 # They can contain letters, numbers and underscores.
 
