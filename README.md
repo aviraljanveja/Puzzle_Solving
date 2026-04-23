@@ -1,1 +1,1 @@
-*Algorithmic problem solving patterns in Python*
+*Algorithmic puzzle solving patterns*
